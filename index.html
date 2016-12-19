@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="countdown/countdown.js"></script>
     <!--[if IE]>
         <link rel="stylesheet" href="css/style-ie.css" />
     <![endif]-->
@@ -47,12 +48,12 @@
 
 </head>
     <body>
-<nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-white full-width-pull-menu" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-white full-width-pull-menu bg-dark-gray" role="navigation">
         <!-- navigation panel -->
         <div class="container">
                        <div class="row">
                            <!-- logo -->
-                           <div class="col-md-2 col-sm-2 pull-left"><a href="index.html"><img alt="" src="images/logo-light.png" class="logo" /></a></div>
+                           <div class="col-md-2 col-sm-2 pull-left"><a href="index.html"><img alt="" src="images/offene-stadt.png" class="logo" /></a></div>
                            <!-- end logo -->
                            <!-- main menu -->
                            <div class="col-md-10 col-sm-7 no-padding-right text-right ">
@@ -65,44 +66,13 @@
                                                    <li class="dropdown panel">
                                                        <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Home<i class="fa fa-angle-down"></i></a>
                                                        <!-- sub menu -->
-                                                       <ul id="collapse1" class="dropdown-menu mega-menu panel-collapse collapse mega-menu-full bg-transparent no-padding">
-                                                           <!-- sub menu column  -->
-                                                           <li>
-                                                               <!-- sub menu item  -->
-                                                               <ul class="no-padding">
-                                                                   <li><a href="index.html">Home main</a></li>
-                                                                   <li><a href="home-fashion.html">Home fashion</a></li>
-                                                                   <li><a href="home-architecture.html">Home architecture</a></li>
-                                                                   <li><a href="home-spa.html">Home spa</a></li>
-                                                                   <li><a href="home-agency.html">Home agency</a></li>
-                                                                   <li><a href="home-restaurant.html">Home restaurant</a></li>
-                                                                   <li><a href="home-travel-agency.html">Home travel agency</a></li>
-                                                               </ul>
-                                                               <!-- end sub menu item  -->
-                                                           </li>
-                                                           <!-- sub menu column end -->
-                                                       </ul>
                                                        <!-- end sub menu -->
                                                    </li>
                                                    <!-- end menu item -->
-                                                   <li><a href="#about-us" class="inner-link">About Us</a> </li>
+                                                   <li><a href="#about-us" class="inner-link">Kontakt</a> </li>
                                                    <li><a href="#portfolio" class="inner-link">Portfolio</a> </li>
                                                    <li><a href="#service" class="inner-link">Our Service</a></li>
-                                                   <li><a href="#team" class="inner-link">Our Team</a></li>
-                                                   <li><a href="#blog" class="inner-link">Latest Blog</a></li>
-                                                   <li><a href="#contact" class="inner-link">Contact</a></li>
-                                                   <li><a href="index.html" class="inner-link">Demos</a></li>
                                                </ul>
-                                           </div>
-                                           <div class="col-md-12 text-center cover-background padding-five" style="background-image:url('http://placehold.it/1920x1080');">
-                                               <div><img src="images/logo-dark.png" alt="" /></div>
-                                               <div class="padding-two no-padding-bottom">
-                                                   <a href="#" class="btn social-icon social-icon-large button"><i class="fa fa-facebook"></i></a>
-                                                   <a href="#" class="btn social-icon social-icon-large button"><i class="fa fa-twitter"></i></a>
-                                                   <a href="#" class="btn social-icon social-icon-large button"><i class="fa fa-google-plus"></i></a>
-                                                   <a href="#" class="btn social-icon social-icon-large button"><i class="fa fa-tumblr"></i></a>
-                                                   <a href="#" class="btn social-icon social-icon-large button"><i class="fa fa-rss"></i></a>
-                                               </div>
                                            </div>
                                            <button class="close-button" id="close-button">Close Menu</button>
                                        </div>
@@ -116,140 +86,71 @@
                      </div>
           <!-- end navigation -->
 </nav>
-<!-- head section -->
-       <section class="page-title parallax3 parallax-fix page-title-large">
-           <div class="opacity-medium bg-black"></div>
-           <img class="parallax-background-img" src="http://placehold.it/1920x1000" alt="" />
-           <div class="container">
-               <div class="row">
-                   <div class="col-md-12 col-sm-12 text-center animated fadeInUp">
-                       <div class="separator-line bg-yellow no-margin-top margin-four"></div>
-                       <!-- page title -->
-                       <h1 class="white-text">Tage bis zur offenen Stadt</h1>
-                       <!-- end page title -->
-                       <!-- page title tagline -->
-                       <span class="white-text">Lorem Ipsum is simply dummy text of the printing.</span>
-                       <!-- end title tagline -->
-                   </div>
-               </div>
-           </div>
-       </section>
-       <!-- end head section -->
 
        <!-- content section -->
       <section class="wow fadeIn">
-          <div class="container">
-              <div class="row">
-                  <!-- counter -->
-                  <div class="bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten" data-wow-duration="900ms">
-                      <i class="icon-anchor medium-icon"></i>
-                        <title>The Final Countdown</title>
-                        <div id="getting-started"></div>
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                        <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-                        <script type="text/javascript">
-                        $('#getting-started').countdown('2017/01/03', function(event) {
-                        $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
-                        });
-                        </script>
-
-                      <span class="counter-title text-large">bis zum Tag der offenen Stadt</span>
-                  </div>
-                  <!-- end counter -->
-              </div>
-          </div>
-      </section>
-
-      <section class="parallax2 parallax-fix" >
-          <img class="parallax-background-img" src="http://placehold.it/1902x974" alt="" />
-          <div class="slider-overlay bg-slider"></div>
-          <div class="container">
-              <div class="row">
-                  <!-- counter -->
-                  <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten" data-wow-duration="300ms">
-                      <i class="icon-global medium-icon"></i>
-                      <span class="timer counter-number white-text" data-to="562" data-speed="7000"></span>
-                      <span class="counter-title gray-text">Projects</span>
-                  </div>
-                  <!-- end counter -->
-
-              </div>
-          </div>
-      </section>
-
-      <section class="wow fadeIn">
-          <div class="container">
-              <div class="row">
-                  <div class="text-center center-col">
-                      <!-- pie charts -->
-                      <div class="col-md-3 col-sm-3 chart-style2 wow zoomIn xs-margin-bottom-ten">
-                          <div class="chart-percent"><span class="chart2 black-text" data-percent="90"><span class="percent"></span> </span></div>
-                          <div class="chart-text">
-                              <h5 class="black-text">Graphic Design</h5>
-                              <p>Expert, 7 years</p>
+        <div class="container-fluid full-screen position-relative no-padding no-transition" >
+               <div class="opacity-medium bg-white"></div>
+               <div id="animated-balls"></div>
+               <div class="slider-typography xs-position-inherit">
+                   <div class="slider-text-middle-main">
+                       <div class="slider-text-top slider-text-middle2">
+                           <!-- logo -->
+                           <div class="coming-soon-logo"><img class="logo-style-2" src="images/offene-stadt.png" alt=""/></div>
+                           <!-- end logo -->
+                           <span class="coming-soon-title text-uppercase gray-text margin-ten no-margin-lr no-margin-bottom">FORUM Offene Stadt<br />
+                             03.03.2017 | 10 - 19 Uhr <br />
+                             KörberForum | Hamburg <br />
+                             OffeneStadt.info</span>
+                           <!-- time -->
+                           <div id="counter-underconstruction2" class="white-text text-center margin-two no-margin-lr no-margin-bottom"></div>
+                           <div class="text-center">
+                           <script>
+                           var myCountdown1 = new Countdown({time:86400*20});
+                           </script>
                           </div>
-                      </div>
-                      <!-- end pie charts -->
-                  </div>
-              </div>
-          </div>
-      </section>
 
-      <section class="bg-black wow fadeIn">
-          <div class="container">
-              <div class="row">
-                  <div class="text-center center-col">
-                      <!-- pie charts -->
-                      <div class="col-md-3 col-sm-3 wow bounceIn xs-margin-bottom-ten">
-                          <div class="chart-percent"><span class="chart white-text" data-percent="75"><span class="percent"></span> </span></div>
-                          <div class="chart-text">
-                              <h5 class="white-text">Graphic Design</h5>
-                              <p>Expert, 7 years</p>
-                          </div>
-                      </div>
-                      <!-- end pie charts -->
-                  </div>
-              </div>
-          </div>
-      </section>
-      <!-- end content section -->
-      <!-- footer -->
-         <footer class="bg-white border-top">
-             <div class="container onepage-footer-middle">
-                 <div class="row">
-                     <div class="col-md-12 col-sm-12 footer-social text-right text-center">
-                         <!-- social media link -->
-                         <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                         <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                         <a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
-                         <a target="_blank" href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
-                         <a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-                         <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-                         <!-- end social media link -->
-                     </div>
-                 </div>
-             </div>
-             <div class="container-fluid bg-dark-gray footer-bottom">
-                 <div class="container">
-                     <div class="row margin-three">
-                         <!-- copyright -->
-                         <div class="col-md-6 col-sm-6 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
-                             &copy; 2015 H-Code is proudly powered by ThemeZaa.
-                         </div>
-                         <!-- end copyright -->
-                         <!-- logo -->
-                         <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                             <a href="index.html"><img src="images/logo-light-gray.png" alt=""/></a>
-                         </div>
-                         <!-- end logo -->
-                     </div>
-                 </div>
-             </div>
-             <!-- scroll to top -->
-             <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
-             <!-- scroll to top end... -->
-         </footer>
-         <!-- end footer -->
+                           <!-- end time -->
+                       </div>
+                   </div>
+               </div>
+               <div class="notify-me-main bg-white">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-md-12 col-sm-12 text-center">
+                               <span class="notify-me-text text-uppercase"><strong class="black-text">Weitere Infos</strong> <br>We'll be here soon with our new awesome site, subscribe to be notified.</span>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-md-6 col-sm-12 text-center center-col">
+                               <form id="notifymeform" action="javascript:void(0)" method="post">
+                                   <div id="success" class="no-margin-lr"></div>
+                                   <input type="text" placeholder="Enter your email address" name="email" id="email" class="form-control email-add">
+                                   <button name="notifyme-button" id="notifyme-button" class="btn btn-black btn-small no-margin"><span>Get Notified</span></button>
+                               </form>
+                           </div>
+                       </div>
+                       <div class="row coming-soon-footer">
+                                                  <!--Sponsoren-->
+                                                  <div class="col-md-12 text-center margin-five no-margin-bottom"><img class="logo-style-2" src="" alt=""</div>
+                                                  <div class="coming-soon-logo"><img class="logo-style-2" src="images/offene-stadt.png" alt=""/></div>
+                                                  <!--Sponsoren Ende-->
+
+                                                  <!-- social icon -->
+                                                  <div class="col-md-12 text-center margin-five no-margin-bottom">
+                                                      <a target="_blank" href="https://www.facebook.com/" class="btn social-icon button"><i class="fa fa-facebook"></i></a>
+                                                      <a target="_blank" href="https://twitter.com/" class="btn social-icon button"><i class="fa fa-twitter"></i></a>
+                                                      <a target="_blank" href="https://plus.google.com" class="btn social-icon button"><i class="fa fa-google-plus"></i></a>
+                                                      <a target="_blank" href="https://www.youtube.com/" class="btn social-icon button"><i class="fa fa-youtube"></i></a>
+                                                      <a target="_blank" href="https://www.linkedin.com/" class="btn social-icon button no-margin-right"><i class="fa fa-linkedin"></i></a>
+                                                  </div>
+                                                  <!-- end social icon -->
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </section>
+
         <!-- javascript libraries / javascript files set #2 -->
        <script type="text/javascript" src="js/jquery.min.js"></script>
        <script type="text/javascript" src="js/modernizr.js"></script>
